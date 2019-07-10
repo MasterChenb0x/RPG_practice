@@ -3,7 +3,8 @@ import random
 game_running = True
 game_results = []
 
-
+# The following two functions return the same information. You can merge these and just call it whether player or monstor.
+# If you are wantign to make this a class later, that is a different discussion.
 def monster_roll():
     return random.randint(1, 20)
 
@@ -54,7 +55,7 @@ while game_running == True:
     print("____" * 5)
     plyr["Name"] = input()
     print("____" * 5)
-    print("Hello " + plyr["Name"])
+    print(f"Hello {plyr["Name"]}") # research functional strings. They are a godsend
     print("[enter]")
     input()
     print("____" * 5)
